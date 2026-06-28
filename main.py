@@ -1,4 +1,3 @@
-#  I got a solid idea to create a basic student finance tracker which will help students even any other guy to trace their monthly/weekley expensives.... But make sure this will be the first version , So i'll make as CLI based.
 
 import webbrowser
 import time
@@ -23,4 +22,5 @@ if(sheet_choice ==  'S'):
 
 else:
     print('Something went wrong !')
+
 
