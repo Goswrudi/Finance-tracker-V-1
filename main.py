@@ -14,12 +14,24 @@ information()
 
 def setting():
  
-    G = print('''Google Web|Softwares key are ;
+    G = print('''Google Web-Softwares key are ;
 S for Google Sheets 
 D for Google Docs
 P for Google PPT
 C for Google Calendor              
 GW for Google workspace              ''')
+    
+    print('')
+    
+    M = print('''Micorosft Web-Softwares key are ;
+e for Micorosft Excel 
+w for Micorosft Word 
+p for Microsoft Powerpoint
+MO for Microsoft one               
+              ''')
+
+
+setting()
 
 # 1 = input('To See all Settings/keybord shortcut press * ')
 
