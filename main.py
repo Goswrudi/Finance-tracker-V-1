@@ -1,6 +1,6 @@
 
+
 import webbrowser
-import time
 
 def open_sheet():
     sheet_url = 'https://sheets.google.com'
