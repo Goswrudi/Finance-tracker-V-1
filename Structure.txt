@@ -1,0 +1,13 @@
+
+Finance Tracker
+
+├── Dashboard
+├── Add Transaction
+├── Categories
+├── Statistics
+├── Monthly Reports
+├── Charts
+├── Settings
+└── Export
+
+
