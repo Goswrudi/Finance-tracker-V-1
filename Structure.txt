@@ -1,6 +1,6 @@
 
 Finance Tracker
-
+└── User info
 ├── Dashboard
 ├── Add Transaction
 ├── Categories
