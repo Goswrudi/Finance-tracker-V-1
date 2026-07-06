@@ -43,4 +43,9 @@ setting()
 def O_sheets():
     sheets_url = 'https://sheets.google.com'
     open = webbrowser.open(sheets_url)
+
+def O_google():
+    sheets_url = 'https://docs.google.com'
+    open = webbrowser.open(sheets_url)
+
     
