@@ -33,6 +33,14 @@ MO for Microsoft one
 
 setting()
 
+
+
 # 1 = input('To See all Settings/keybord shortcut press * ')
 
 # if(1 == '*'):
+
+
+def O_sheets():
+    sheets_url = 'https://sheets.google.com'
+    open = webbrowser.open(sheets_url)
+    
