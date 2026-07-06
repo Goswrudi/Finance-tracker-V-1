@@ -44,8 +44,11 @@ def O_sheets():
     sheets_url = 'https://sheets.google.com'
     open = webbrowser.open(sheets_url)
 
-def O_google():
-    sheets_url = 'https://docs.google.com'
-    open = webbrowser.open(sheets_url)
+def O_docs():
+    docs_url = 'https://docs.google.com'
+    open = webbrowser.open(docs_url)
 
+def O_ppt():
+    ppt_url = 'https://docs.google.com/presentation/u/0/'
+    open = webbrowser.open(ppt_url)
     
