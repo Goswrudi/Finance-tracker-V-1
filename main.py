@@ -51,4 +51,9 @@ def O_docs():
 def O_ppt():
     ppt_url = 'https://docs.google.com/presentation/u/0/'
     open = webbrowser.open(ppt_url)
+
+def O_cal():
+    cal_url = 'https://calendar.google.com/'
+    open = webbrowser.open(O_cal)
+
     
