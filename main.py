@@ -70,5 +70,7 @@ def O_powerpoint():
     pptx_url = 'https://powerpoint.cloud.microsoft/en-gb/'
     open = webbrowser.open(pptx_url)
 
-        
-        # 'https://www.microsoft.com/en-in/microsoft-365'
+def O_MO():
+    MO_url = 'https://www.microsoft.com/en-in/microsoft-365'
+    open = webbrowser.open(MO_url)
+ 
