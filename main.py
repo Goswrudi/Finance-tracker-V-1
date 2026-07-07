@@ -65,3 +65,7 @@ def O_excel():
 def O_word():
     word_url = 'https://word.cloud.microsoft/en-gb/'
     open = webbrowser.open(word_url)
+
+def O_powerpoint():
+    pptx_url = 'https://powerpoint.cloud.microsoft/en-gb/'
+    open = webbrowser.open(pptx_url)
