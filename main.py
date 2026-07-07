@@ -61,3 +61,7 @@ def O_cal():
 def O_excel():
     sheets_url = 'https://excel.cloud.microsoft/en-gb/'
     open = webbrowser.open(sheets_url)
+
+def O_word():
+    sheets_url = 'https://word.cloud.microsoft/en-gb/'
+    open = webbrowser.open(sheets_url)
