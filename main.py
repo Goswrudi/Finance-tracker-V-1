@@ -69,3 +69,6 @@ def O_word():
 def O_powerpoint():
     pptx_url = 'https://powerpoint.cloud.microsoft/en-gb/'
     open = webbrowser.open(pptx_url)
+
+        
+        # 'https://www.microsoft.com/en-in/microsoft-365'
