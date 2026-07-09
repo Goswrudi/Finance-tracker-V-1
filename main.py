@@ -68,9 +68,11 @@ username = information()
 show_settings()
 
 # Capture input and immediately force it to uppercase using ()
+
 user_choice = input("Mention Today's Agenda (Enter Key): ").upper()
 
 # Handle choice logic
+
 if user_choice == 'S':
     print("Opening Google Sheets...")
     googlefuncs.O_sheets() # Fixed to call Sheets!
@@ -90,6 +92,25 @@ elif user_choice == 'C':
 # elif user_choice == 'GW':
 #     print("Opening Google Workspace...")
 #     googlefuncs.O_docs()
+
+# Adding the microsoft functions 
+
+
+if(user_choice == 'E'):
+    print('Openning Micosoft excel')
+    microsoftfuncs.O_excel()
+
+elif(user_choice == 'W'):
+    print('Openning Micosoft Word')
+    microsoftfuncs.O_word()
+
+elif(user_choice == 'P_MS'):
+    print('Openning Micosoft Powewrpoint')
+    microsoftfuncs.O_powerpoint()
+
+elif(user_choice == 'MO'):
+    print('Openning Micosoft One 365')
+    microsoftfuncs.O_MO()
 
 
 # elif user_choice == 'NONE':
