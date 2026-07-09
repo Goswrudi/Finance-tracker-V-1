@@ -63,21 +63,23 @@ class microsoftfuncs:
         webbrowser.open('https://www.microsoft.com/en-in/microsoft-365')
 
 
-# # --- Main logic ---
-# username = information()
-# show_settings()
+# --- Main logic ---
+username = information()
+show_settings()
 
-# # Capture input and immediately force it to uppercase using ()
-# user_choice = input("Mention Today's Agenda (Enter Key): ").upper()
+# Capture input and immediately force it to uppercase using ()
+user_choice = input("Mention Today's Agenda (Enter Key): ").upper()
 
-# # Handle choice logic
-# if user_choice == 'S':
-#     print("Opening Google Sheets...")
-#     googlefuncs.O_sheets() # Fixed to call Sheets!
+# Handle choice logic
+if user_choice == 'S':
+    print("Opening Google Sheets...")
+    googlefuncs.O_sheets() # Fixed to call Sheets!
 
-# elif user_choice == 'C':
-#     print("Opening Google Calendar...")
-#     googlefuncs.O_cal()
+elif user_choice == 'D':
+    print("Opening Google Calendar...")
+    googlefuncs.O_docs()
+
+
 
 # elif user_choice == 'NONE':
 #     print(f'\nNo problem, {username}... Fintraa is ready for anything you want!!')
