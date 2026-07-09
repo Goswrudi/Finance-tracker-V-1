@@ -112,9 +112,5 @@ elif(user_choice == 'MO'):
     print('Openning Micosoft One 365')
     microsoftfuncs.O_MO()
 
-
-# elif user_choice == 'NONE':
-#     print(f'\nNo problem, {username}... Fintraa is ready for anything you want!!')
-
-# else:
-#     print("\nInvalid key! Fintraa automation terminated.")
+else:
+     print("\nInvalid key! Fintraa automation terminated.")
