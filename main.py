@@ -76,9 +76,20 @@ if user_choice == 'S':
     googlefuncs.O_sheets() # Fixed to call Sheets!
 
 elif user_choice == 'D':
-    print("Opening Google Calendar...")
+    print("Opening Google Docs...")
     googlefuncs.O_docs()
 
+elif user_choice == 'P':
+    print("Opening Google PPTX...")
+    googlefuncs.O_ppt()
+
+elif user_choice == 'C':
+    print("Opening Google Calendar...")
+    googlefuncs.O_cal()
+
+# elif user_choice == 'GW':
+#     print("Opening Google Workspace...")
+#     googlefuncs.O_docs()
 
 
 # elif user_choice == 'NONE':
