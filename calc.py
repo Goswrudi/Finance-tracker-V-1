@@ -46,9 +46,14 @@ def Standard_deviation():
         print(f'The Median of the following data {user.user_final_data} is : ({np.std(user.user_final_data)})')
         # Standard deviation 
 
-# atleast need a funciton 
-# print(f'The Median of the following data {user.user_final_data} is : ({np.percentile(user.user_final_data)})')
+def percantile():
+        import numpy as np
 
+def percentile():  # Fixed typo in function name
+    # Added the required '50' for the median calculation
+    median_val = np.percentile(user.user_final_data, 50)
+    print(f'The Median of the following data {user.user_final_data} is : ({median_val})')
+ 
 
 # Creating the seprtae functions cause it will make easier to call
 
