@@ -1,17 +1,16 @@
 # Create some functios methods and functions which will help fintraa for the statistics overview 
 
+# Creating Statistics calculator 
+
 import numpy as np
 
+def user_data():
+    data = input("Enter data separated by commas: ")
 
-numbers = input('Enter a number : ') 
-print(numbers)
+    data = data.split(",")
 
+    data = [float(x) for x in data]
 
-# convert the numbers from string to list
-numbers = input("Enter numbers separated by commas: ")
+    print(data)
 
-numbers = numbers.split(",")
-
-numbers = [float(x) for x in numbers]
-
-print(numbers)
+user_data()
