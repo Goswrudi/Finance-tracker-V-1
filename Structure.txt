@@ -4,10 +4,37 @@ Finance Tracker
 ├── Dashboard
 ├── Add Transaction
 ├── Categories
-├── Statistics
 ├── Monthly Reports
 ├── Charts
 ├── Settings
 └── Export
 
+├── Calculator
+  |Arithmetic
+     Addition
+     Subraction
+     Multiplication
+     Dividation
 
+  |Statistics:
+    Count
+    Sum
+    Mean
+    Median
+    Mode
+    Minimum
+    Maximum
+    Range
+    Variance
+    Standard Deviation
+    
+  |Financial
+    Total Expense
+    Average Daily Expense
+    Highest Expense
+    Lowest Expense
+    Monthly Average
+    Savings Rate
+
+
+    
