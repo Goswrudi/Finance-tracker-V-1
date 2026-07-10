@@ -4,13 +4,17 @@
 
 import numpy as np
 
-def user_data():
+class user_data():
+    
     data = input("Enter data separated by commas: ")
 
     data = data.split(",")
 
     data = [float(x) for x in data]
 
-    print(data)
+    final_user_data = data
+    print(final_user_data)
 
 user_data()
+
+print(np.average(user_data.final_user_data))
