@@ -1,40 +1,123 @@
-
-Finance Tracker
-└── User info
-├── Dashboard
-├── Add Transaction
-├── Categories
-├── Monthly Reports
-├── Charts
-├── Settings
-└── Export
-
-├── Calculator
-  |Arithmetic
-     Addition
-     Subraction
-     Multiplication
-     Dividation
-
-  |Statistics:
-    Count
-    Sum
-    Mean
-    Median
-    Mode
-    Minimum
-    Maximum
-    Range
-    Variance
-    Standard Deviation
-    
-  |Financial
-    Total Expense
-    Average Daily Expense
-    Highest Expense
-    Lowest Expense
-    Monthly Average
-    Savings Rate
-
-
-    
+Fintraa
+│
+├──  User
+│   ├── Profile
+│   ├── Preferences
+│   ├── Currency
+│   └── Security
+│
+├──  Dashboard
+│   ├── Balance Overview
+│   ├── Income
+│   ├── Expense
+│   ├── Savings
+│   ├── Recent Transactions
+│   ├── Budget Progress
+│   └── Quick Actions
+│
+├──  Transactions
+│   ├── Add Transaction
+│   ├── Edit Transaction
+│   ├── Delete Transaction
+│   ├── Search
+│   ├── Filter
+│   └── Transaction History
+│
+├──  Categories
+│   ├── Income Categories
+│   ├── Expense Categories
+│   ├── Add Category
+│   ├── Edit Category
+│   └── Delete Category
+│
+├──  Budget
+│   ├── Monthly Budget
+│   ├── Spending Limits
+│   ├── Budget Progress
+│   └── Budget Alerts
+│
+├──  Reports
+│   ├── Daily
+│   ├── Weekly
+│   ├── Monthly
+│   ├── Yearly
+│   ├── Custom Range
+│   └── Export PDF
+│
+├──  Analytics
+│   ├── Expense Trends
+│   ├── Income Trends
+│   ├── Category Breakdown
+│   ├── Cash Flow
+│   ├── Savings Growth
+│   └── Financial Insights
+│
+├──  Charts
+│   ├── Pie Chart
+│   ├── Bar Chart
+│   ├── Line Chart
+│   ├── Area Chart
+│   └── Monthly Comparison
+│
+├──  Calculator
+│   ├── Arithmetic
+│   │   ├── Addition
+│   │   ├── Subtraction
+│   │   ├── Multiplication
+│   │   ├── Division
+│   │   ├── Percentage
+│   │   ├── Square Root
+│   │   ├── Power
+│   │   └── Modulus
+│   │
+│   ├── Statistics
+│   │   ├── Count
+│   │   ├── Sum
+│   │   ├── Mean
+│   │   ├── Median
+│   │   ├── Mode
+│   │   ├── Minimum
+│   │   ├── Maximum
+│   │   ├── Range
+│   │   ├── Variance
+│   │   ├── Standard Deviation
+│   │   ├── Quartiles
+│   │   ├── Percentiles
+│   │   └── Interquartile Range
+│   │
+│   └── Financial
+│       ├── Total Income
+│       ├── Total Expense
+│       ├── Net Savings
+│       ├── Average Daily Expense
+│       ├── Average Monthly Expense
+│       ├── Highest Expense
+│       ├── Lowest Expense
+│       ├── Savings Rate
+│       ├── Expense Ratio
+│       └── Budget Remaining
+│
+├──  Integrations
+│   ├── Google Sheets
+│   ├── Google Docs
+│   ├── Google Calendar
+│   ├── Microsoft Excel
+│   ├── Microsoft Word
+│   └── Microsoft 365
+│
+├── ⚙ Settings
+│   ├── Appearance
+│   ├── Theme
+│   ├── Notifications
+│   ├── Backup
+│   ├── Import
+│   ├── Export
+│   ├── Database
+│   └── About
+│
+└──  Future AI
+    ├── Spending Predictions
+    ├── Budget Suggestions
+    ├── Smart Categorization
+    ├── Financial Assistant
+    └── Goal Recommendations
