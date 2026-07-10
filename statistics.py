@@ -5,16 +5,15 @@
 import numpy as np
 
 class user_data():
-    
-    data = input("Enter data separated by commas: ")
 
-    data = data.split(",")
+     def __init__(self):
 
-    data = [float(x) for x in data]
+        data = input("Enter data separated by commas: ")
 
-    final_user_data = data
-    print(final_user_data)
+        data = data.split(",")
 
-user_data()
+        self.user_final_data = [float(x) for x in data]
 
-print(np.average(user_data.final_user_data))
+user = user_data()
+
+print(f'The average of the followig data {user.user_final_data} is : ({np.average(user.user_final_data)})') 
