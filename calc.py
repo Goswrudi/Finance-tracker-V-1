@@ -16,11 +16,13 @@ class user_data():
 
 user = user_data()
 
-print(f'The Median of the following data {user.user_final_data} is : ({np.median(user.user_final_data)})')
-# Median 
+def Median():
+        print(f'The Median of the following data {user.user_final_data} is : ({np.median(user.user_final_data)})')
+        # Median function
 
-print(f'The Maximum of the following data {user.user_final_data} is : ({np.max(user.user_final_data)})')
-# Maximum
+def Maximum():
+        print(f'The Maximum of the following data {user.user_final_data} is : ({np.max(user.user_final_data)})')
+        # Maximum
 
 # print(f'The Minimum of the following data {user.user_final_data} is : ({np.minimum(user.user_final_data)})')
 # minimum
