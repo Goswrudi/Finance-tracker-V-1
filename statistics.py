@@ -16,4 +16,32 @@ class user_data():
 
 user = user_data()
 
+print(f'The Median of the following data {user.user_final_data} is : ({np.median(user.user_final_data)})')
+# Median 
+
+print(f'The Maximum of the following data {user.user_final_data} is : ({np.max(user.user_final_data)})')
+# Maximum
+
+# print(f'The Minimum of the following data {user.user_final_data} is : ({np.minimum(user.user_final_data)})')
+# minimum
+
+# print(f'The range of the following data {user.user_final_data} is : ({np.arange(user.user_final_data)})')
+# range
+
+print(f'The Median of the following data {user.user_final_data} is : ({np.median(user.user_final_data)})')
+# Median
+
+print(f'The sum of the following data {user.user_final_data} is : ({np.sum(user.user_final_data)})')
+# Sum
+
 print(f'The average of the followig data {user.user_final_data} is : ({np.average(user.user_final_data)})') 
+#avergae
+
+print(f'The Variance of the following data {user.user_final_data} is : ({np.var(user.user_final_data)})')
+#Variance 
+
+print(f'The Median of the following data {user.user_final_data} is : ({np.std(user.user_final_data)})')
+# Standard deviation 
+
+# atleast need a funciton 
+# print(f'The Median of the following data {user.user_final_data} is : ({np.percentile(user.user_final_data)})')
