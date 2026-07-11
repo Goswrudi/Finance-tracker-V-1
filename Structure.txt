@@ -1,12 +1,12 @@
 Fintraa
 │
-├──  User
+├──  User:
 │   ├── Profile
 │   ├── Preferences
 │   ├── Currency
 │   └── Security
 │
-├──  Dashboard
+├──  Dashboard:
 │   ├── Balance Overview
 │   ├── Income
 │   ├── Expense
@@ -15,7 +15,7 @@ Fintraa
 │   ├── Budget Progress
 │   └── Quick Actions
 │
-├──  Transactions
+├──  Transactions:
 │   ├── Add Transaction
 │   ├── Edit Transaction
 │   ├── Delete Transaction
@@ -23,20 +23,20 @@ Fintraa
 │   ├── Filter
 │   └── Transaction History
 │
-├──  Categories
+├──  Categories:
 │   ├── Income Categories
 │   ├── Expense Categories
 │   ├── Add Category
 │   ├── Edit Category
 │   └── Delete Category
 │
-├──  Budget
+├──  Budget:
 │   ├── Monthly Budget
 │   ├── Spending Limits
 │   ├── Budget Progress
 │   └── Budget Alerts
 │
-├──  Reports
+├──  Reports:
 │   ├── Daily
 │   ├── Weekly
 │   ├── Monthly
@@ -44,7 +44,7 @@ Fintraa
 │   ├── Custom Range
 │   └── Export PDF
 │
-├──  Analytics
+├──  Analytics:
 │   ├── Expense Trends
 │   ├── Income Trends
 │   ├── Category Breakdown
@@ -52,7 +52,7 @@ Fintraa
 │   ├── Savings Growth
 │   └── Financial Insights
 │
-├──  Charts
+├──  Charts:
 │   ├── Pie Chart
 │   ├── Bar Chart
 │   ├── Line Chart
@@ -60,7 +60,7 @@ Fintraa
 │   └── Monthly Comparison
 │
 ├──  Calculator
-│   ├── Arithmetic
+│   ├── Arithmetic:
 │   │   ├── Addition
 │   │   ├── Subtraction
 │   │   ├── Multiplication
@@ -70,7 +70,7 @@ Fintraa
 │   │   ├── Power
 │   │   └── Modulus
 │   │
-│   ├── Statistics
+│   ├── Statistics:
 │   │   ├── Count
 │   │   ├── Sum
 │   │   ├── Mean
