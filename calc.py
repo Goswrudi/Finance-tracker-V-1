@@ -58,3 +58,15 @@ class StatisticsCalculator:
     def get_percentile(self, q=50):  
         val = np.percentile(self.data, q)
         print(f'{q}th Percentile     : ({val})')
+
+
+# --- RUNNING THE PIPELINE ---
+if __name__ == "__main__":
+    # 1. Fetch and clean the data
+    session_data = FinancialData()
+    
+    # 2. Pass that data directly into the calculator instance
+    fintraa_calc = StatisticsCalculator(session_data.clean_data)
+    
+    # 3. Fire up the dashboard!
+    fintraa_calc.display_all_stats()
