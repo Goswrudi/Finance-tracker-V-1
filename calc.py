@@ -16,7 +16,7 @@ class StatisticsCalculator:
 
     def display_all_stats(self):
         """Executes and prints a full dashboard overview of the data."""
-        print("\n📊 --- FINTRAA STATISTICAL ANALYSIS REPORT --- 📊")
+        print("\n || --- FINTRAA STATISTICAL ANALYSIS REPORT --- || ")
         print(f"Target Data Stream: {self.data}\n" + "-"*45)
         
         # We call our internal methods directly
@@ -63,6 +63,10 @@ class StatisticsCalculator:
 # ==========================================
 # FUTURE EXPANSION SPACE
 # ==========================================
+class Arthmetic:
+    """ Basic Airhtmetic logic : """ 
+    pass
+
 class TaxCalculator:
     """Placeholder: You can build your GST/Income Tax logic here later!"""
     pass
