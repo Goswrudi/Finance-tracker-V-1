@@ -1,4 +1,5 @@
-# Setting function
+
+import webbrowser
 
 def show_settings():
     print('''Google Web-Softwares keys are:
@@ -35,3 +36,21 @@ class googlefuncs:
     @staticmethod
     def O_cal():
         webbrowser.open('https://calendar.google.com/')
+
+class microsoftfuncs:
+    @staticmethod
+    def O_excel():
+        webbrowser.open('https://excel.cloud.microsoft/en-gb/')
+
+    @staticmethod
+    def O_word():
+        webbrowser.open('https://word.cloud.microsoft/en-gb/')
+
+    @staticmethod
+    def O_powerpoint():
+        webbrowser.open('https://powerpoint.cloud.microsoft/en-gb/')
+
+    @staticmethod
+    def O_MO():
+        webbrowser.open('https://www.microsoft.com/en-in/microsoft-365')
+
