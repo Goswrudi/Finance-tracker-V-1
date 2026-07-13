@@ -16,3 +16,22 @@ W  -> Microsoft Word
 P_MS -> Microsoft Powerpoint
 MO -> Microsoft One 365''')
     print('='*30 + '\n')
+
+
+class googlefuncs:
+    # @staticmethod tells Python these functions don't need 'self'
+    @staticmethod
+    def O_sheets():
+        webbrowser.open('https://sheets.google.com')
+
+    @staticmethod
+    def O_docs():
+        webbrowser.open('https://docs.google.com')
+
+    @staticmethod
+    def O_ppt():
+        webbrowser.open('https://docs.google.com/presentation/u/0/')
+
+    @staticmethod
+    def O_cal():
+        webbrowser.open('https://calendar.google.com/')
