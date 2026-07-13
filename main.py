@@ -1,5 +1,6 @@
 import webbrowser
 from datetime import datetime
+import calc
 
 def information():
     print('Welcome to Fintraa !')
@@ -114,3 +115,6 @@ elif(user_choice == 'MO'):
 
 else:
      print("\nInvalid key! Fintraa automation terminated.")
+
+# Calculator logic
+
