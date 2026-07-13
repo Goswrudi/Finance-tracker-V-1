@@ -16,7 +16,7 @@ class StatisticsCalculator:
 
     def display_all_stats(self):
         """Executes and prints a full dashboard overview of the data."""
-        print("\n || --- FINTRAA STATISTICAL ANALYSIS REPORT --- || ")
+        print("\n📊 --- FINTRAA STATISTICAL ANALYSIS REPORT --- 📊")
         print(f"Target Data Stream: {self.data}\n" + "-"*45)
         
         # We call our internal methods directly
@@ -58,6 +58,18 @@ class StatisticsCalculator:
     def get_percentile(self, q=50):  
         val = np.percentile(self.data, q)
         print(f'{q}th Percentile     : ({val})')
+
+
+# ==========================================
+# FUTURE EXPANSION SPACE
+# ==========================================
+class TaxCalculator:
+    """Placeholder: You can build your GST/Income Tax logic here later!"""
+    pass
+
+class InterestCalculator:
+    """Placeholder: You can build Compound/Simple interest logic here later!"""
+    pass
 
 
 # --- RUNNING THE PIPELINE ---
