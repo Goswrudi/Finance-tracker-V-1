@@ -6,13 +6,27 @@ from code_class import googlefuncs
 from code_class import microsoftfuncs
 
 
-# --- Main logic ---
-username = information()
-show_settings()
+###      --- Main logic ---     ###
+# username = information()
+# show_settings()
 
-# Capture input and immediately force it to uppercase using ()
+### Creating seprate logic ###
 
-user_choice = input("Mention Today's Agenda (Enter Key): ").upper()
+print('===============================')
+print('')
+
+print('Q for MS/Google plugins')
+print('C for Calculator:') 
+print('S for Setting:')       
+
+print('')
+print('===============================')
+
+
+Main_choice = input('''Today's Agenda? : ''')
+
+
+
 
 
 # # Handle choice logic
