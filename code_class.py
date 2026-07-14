@@ -1,6 +1,15 @@
 
 import webbrowser
 
+
+def information():
+    print('Welcome to Fintraa !')
+    name = input('Enter your name : ')
+    print(f'''\nHey {name}, Welcome to Fintraa !!  
+The Job Eater of Accountants and Personal Assistants !!\n''')    
+    return name # Returning name so the app can remember it
+
+
 def show_settings():
     print('''Google Web-Softwares keys are:
 S  -> Google Sheets 
