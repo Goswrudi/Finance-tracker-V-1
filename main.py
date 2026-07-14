@@ -14,46 +14,47 @@ show_settings()
 
 user_choice = input("Mention Today's Agenda (Enter Key): ").upper()
 
-# Handle choice logic
 
-if user_choice == 'S':
-    print("Opening Google Sheets...")
-    googlefuncs.O_sheets() # Fixed to call Sheets!
+# # Handle choice logic
 
-elif user_choice == 'D':
-    print("Opening Google Docs...")
-    googlefuncs.O_docs()
+# if user_choice == 'S':
+#     print("Opening Google Sheets...")
+#     googlefuncs.O_sheets() # Fixed to call Sheets!
 
-elif user_choice == 'P':
-    print("Opening Google PPTX...")
-    googlefuncs.O_ppt()
-
-elif user_choice == 'C':
-    print("Opening Google Calendar...")
-    googlefuncs.O_cal()
-
-# elif user_choice == 'GW':
-#     print("Opening Google Workspace...")
+# elif user_choice == 'D':
+#     print("Opening Google Docs...")
 #     googlefuncs.O_docs()
 
-# Adding the microsoft functions 
+# elif user_choice == 'P':
+#     print("Opening Google PPTX...")
+#     googlefuncs.O_ppt()
+
+# elif user_choice == 'C':
+#     print("Opening Google Calendar...")
+#     googlefuncs.O_cal()
+
+# # elif user_choice == 'GW':
+# #     print("Opening Google Workspace...")
+# #     googlefuncs.O_docs()
+
+# # Adding the microsoft functions 
 
 
-if(user_choice == 'E'):
-    print('Openning Micosoft excel')
-    microsoftfuncs.O_excel()
+# if(user_choice == 'E'):
+#     print('Openning Micosoft excel')
+#     microsoftfuncs.O_excel()
 
-elif(user_choice == 'W'):
-    print('Openning Micosoft Word')
-    microsoftfuncs.O_word()
+# elif(user_choice == 'W'):
+#     print('Openning Micosoft Word')
+#     microsoftfuncs.O_word()
 
-elif(user_choice == 'P_MS'):
-    print('Openning Micosoft Powewrpoint')
-    microsoftfuncs.O_powerpoint()
+# elif(user_choice == 'P_MS'):
+#     print('Openning Micosoft Powewrpoint')
+#     microsoftfuncs.O_powerpoint()
 
-elif(user_choice == 'MO'):
-    print('Openning Micosoft One 365')
-    microsoftfuncs.O_MO()
+# elif(user_choice == 'MO'):
+#     print('Openning Micosoft One 365')
+#     microsoftfuncs.O_MO()
 
-else:
-     print("\nInvalid key! Fintraa automation terminated.")
+# else:
+#      print("\nInvalid key! Fintraa automation terminated.")
