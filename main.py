@@ -7,7 +7,14 @@ from code_class import microsoftfuncs
 
 
 ###      --- Main logic ---     ###
-# username = information()
+print('===============================')
+print('')
+
+username = information()
+
+print('===============================')
+print('')
+
 # show_settings()
 
 ### Creating seprate logic ###
@@ -23,8 +30,7 @@ print('')
 print('===============================')
 
 
-Main_choice = input('''Today's Agenda? : ''')
-
+Main_choice = input('''Today's Agenda? : ''').upper()
 
 
 
