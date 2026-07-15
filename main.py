@@ -34,12 +34,33 @@ print('===============================')
 
 Main_choice = input('''Today's Agenda? : ''').upper()
 
-# def logic_choice():
-#     if(Main_choice == 'Q'):
-#         googlefuncs()
+def logic_choice():
+    if Main_choice == 'Q':
+        None
 
-#     elif(Main_choice == 'C'):
-#         cal
+    elif Main_choice == 'C':
+        print("Starting Calculator Application...")
+        
+        # 1. Initialize the financial data prompt
+        session_data = FinancialData()
+        
+        # 2. Pass the cleaned data to the calculator
+        fintraa_calc = StatisticsCalculator(session_data.clean_data)
+        
+        # 3. Display the report
+        fintraa_calc.display_all_stats()
+        
+    elif Main_choice == 'S':
+        show_settings()
+
+    else:
+        print('Wrong choice entred by the user : ')
+
+        
+# --- Execution Guard ---
+# Put this at the very bottom of your file to trigger your function!
+if __name__ == "__main__":
+    logic_choice()
 
 
 # # Handle choice logic
