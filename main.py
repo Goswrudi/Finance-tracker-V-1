@@ -5,7 +5,7 @@ from code_class import show_settings
 from code_class import googlefuncs
 from code_class import microsoftfuncs
 from calc import FinancialData
-
+from calc import StatisticsCalculator
 
 
 ###      --- Main logic ---     ###
