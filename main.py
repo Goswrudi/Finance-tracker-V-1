@@ -4,6 +4,8 @@ from code_class import information
 from code_class import show_settings
 from code_class import googlefuncs
 from code_class import microsoftfuncs
+from calc import FinancialData
+
 
 
 ###      --- Main logic ---     ###
@@ -32,7 +34,12 @@ print('===============================')
 
 Main_choice = input('''Today's Agenda? : ''').upper()
 
+# def logic_choice():
+#     if(Main_choice == 'Q'):
+#         googlefuncs()
 
+#     elif(Main_choice == 'C'):
+#         cal
 
 
 # # Handle choice logic
