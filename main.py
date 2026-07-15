@@ -1,108 +1,96 @@
 import webbrowser
 from datetime import datetime
-from code_class import information
-from code_class import show_settings
-from code_class import googlefuncs
-from code_class import microsoftfuncs
-from calc import FinancialData
-from calc import StatisticsCalculator
 
+from code_class import information, show_settings, googlefuncs, microsoftfuncs
+from calc import FinancialData, StatisticsCalculator
 
-###      --- Main logic ---     ###
-print('===============================')
-print('')
-
-username = information()
-
-print('===============================')
-print('')
-
-# show_settings()
-
-### Creating seprate logic ###
-
-print('===============================')
-print('')
-
-print('Q for MS/Google plugins')
-print('C for Calculator:') 
-print('S for Setting:')       
-
-print('')
-print('===============================')
-
-
-Main_choice = input('''Today's Agenda? : ''').upper()
-
-def logic_choice():
-    if Main_choice == 'Q':
-        None
-
-    elif Main_choice == 'C':
-        print("Starting Calculator Application...")
+def logic_choice(choice):
+    # --- GOOGLE & MICROSOFT PLUGINS ---
+    if choice == 'Q':
+        show_settings() 
+        plugin_choice = input("\nEnter plugin key (e.g., S, D, E, W): ").upper()
         
-        # 1. Initialize the financial data prompt
-        session_data = FinancialData()
-        
-        # 2. Pass the cleaned data to the calculator
-        fintraa_calc = StatisticsCalculator(session_data.clean_data)
-        
-        # 3. Display the report
-        fintraa_calc.display_all_stats()
-        
-    elif Main_choice == 'S':
+        # Google Handlers
+        if plugin_choice == 'S':
+            print("Opening Google Sheets...")
+            googlefuncs.O_sheets()
+        elif plugin_choice == 'D':
+            print("Opening Google Docs...")
+            googlefuncs.O_docs()
+        elif plugin_choice == 'P':
+            print("Opening Google Slides...")
+            googlefuncs.O_ppt()
+        elif plugin_choice == 'C':
+            print("Opening Google Calendar...")
+            googlefuncs.O_cal()
+            
+        # Microsoft Handlers
+        elif plugin_choice == 'E':
+            print("Opening Microsoft Excel...")
+            microsoftfuncs.O_excel()
+        elif plugin_choice == 'W':
+            print("Opening Microsoft Word...")
+            microsoftfuncs.O_word()
+        elif plugin_choice == 'P_MS':
+            print("Opening Microsoft PowerPoint...")
+            microsoftfuncs.O_powerpoint()
+        elif plugin_choice == 'MO':
+            print("Opening Microsoft OneNote...")
+            microsoftfuncs.O_MO()
+        else:
+            print(f"\n[{plugin_choice}] is an invalid plugin key! Returning to main.")
+
+    # --- CALCULATOR ---
+    elif choice == 'C':
+        print("\nStarting Calculator Application...")
+        try:
+            session_data = FinancialData()
+            
+            # Prevent NumPy crash if the user just hits 'enter' and the list is empty
+            if not session_data.clean_data:
+                print("Error: No valid data entered. Please enter numbers separated by commas.")
+                return # Exits this function cleanly without crashing
+                
+            fintraa_calc = StatisticsCalculator(session_data.clean_data)
+            fintraa_calc.display_all_stats()
+            
+        except ValueError:
+            print("Error: Invalid input. Please only enter numbers (e.g., 100, 200, 300).")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+
+    # --- SETTINGS DISPLAY ONLY ---
+    elif choice == 'S':
+        print("\n=== FINTRAA KEY MAP & SETTINGS ===")
         show_settings()
-
-    else:
-        print('Wrong choice entred by the user : ')
-
         
+    # --- CATCH-ALL FOR BAD MAIN MENU INPUTS ---
+    else:
+        print(f"\nInvalid key [{choice}]! Fintraa automation terminated.")
+
+
+def run_app():
+    print('===============================')
+    print('')
+    
+    # 1. Welcome banner & get username
+    username = information()
+    
+    print('===============================')
+    print('')
+    
+    # 2. Main Menu Choice
+    print('Q for MS/Google plugins')
+    print('C for Calculator') 
+    print('S for Settings')      
+    print('===============================')
+    
+    # Pass the choice into the logic function as an argument
+    main_choice = input('''Today's Agenda? : ''').upper()
+    logic_choice(main_choice)
+
+
 # --- Execution Guard ---
-# Put this at the very bottom of your file to trigger your function!
+# This ensures the script only runs when executed directly.
 if __name__ == "__main__":
-    logic_choice()
-
-
-# # Handle choice logic
-
-# if user_choice == 'S':
-#     print("Opening Google Sheets...")
-#     googlefuncs.O_sheets() # Fixed to call Sheets!
-
-# elif user_choice == 'D':
-#     print("Opening Google Docs...")
-#     googlefuncs.O_docs()
-
-# elif user_choice == 'P':
-#     print("Opening Google PPTX...")
-#     googlefuncs.O_ppt()
-
-# elif user_choice == 'C':
-#     print("Opening Google Calendar...")
-#     googlefuncs.O_cal()
-
-# # elif user_choice == 'GW':
-# #     print("Opening Google Workspace...")
-# #     googlefuncs.O_docs()
-
-# # Adding the microsoft functions 
-
-
-# if(user_choice == 'E'):
-#     print('Openning Micosoft excel')
-#     microsoftfuncs.O_excel()
-
-# elif(user_choice == 'W'):
-#     print('Openning Micosoft Word')
-#     microsoftfuncs.O_word()
-
-# elif(user_choice == 'P_MS'):
-#     print('Openning Micosoft Powewrpoint')
-#     microsoftfuncs.O_powerpoint()
-
-# elif(user_choice == 'MO'):
-#     print('Openning Micosoft One 365')
-#     microsoftfuncs.O_MO()
-
-# else:
-#      print("\nInvalid key! Fintraa automation terminated.")
+    run_app()
