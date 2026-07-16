@@ -60,9 +60,6 @@ class StatisticsCalculator:
         print(f'{q}th Percentile     : ({val})')
 
 
-# ==========================================
-# FUTURE EXPANSION SPACE
-# ==========================================
 class Arthmetic:
     """ A Airhtmetic Calculator for daily and basic performative task  : """ 
 
@@ -93,6 +90,10 @@ class Arthmetic:
         print(f'The Sum of your input {add1} / {add2} is : ' , add1 / add2) 
 
 
+
+# ==========================================
+# FUTURE EXPANSION SPACE
+# ==========================================
 
 class TaxCalculator:
     """Placeholder: You can build your GST/Income Tax logic here later!"""
