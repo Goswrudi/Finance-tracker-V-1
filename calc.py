@@ -66,9 +66,11 @@ class StatisticsCalculator:
 class Arthmetic:
     """ A Airhtmetic Calculator for daily and basic performative task  : """ 
 
-
-
-
+    def Addition():
+        print('opening Airthmetic calculator....')
+        add1 = int(input('Enter a number for addition : '))
+        add2 = int(input('Enter a number for addition : '))
+        print(f'The Sum of your input {add1} + {add2} is : ' , add1 + add2) 
 
 class TaxCalculator:
     """Placeholder: You can build your GST/Income Tax logic here later!"""
