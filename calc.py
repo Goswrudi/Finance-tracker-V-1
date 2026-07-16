@@ -63,12 +63,14 @@ class StatisticsCalculator:
 class Arthmetic:
     """ A Airhtmetic Calculator for daily and basic performative task  : """ 
 
+    @staticmethod
     def Addition():
         print('opening Airthmetic calculator....')
         add1 = int(input('Enter a number for addition : '))
         add2 = int(input('Enter a number for addition : '))
         print(f'The Sum of your input {add1} + {add2} is : ' , add1 + add2) 
 
+    @staticmethod
     def Subtraction():
         print('opening Airthmetic calculator....')
         add1 = int(input('Enter a number for addition : '))
@@ -76,6 +78,7 @@ class Arthmetic:
         print(f'The Sum of your input {add1} - {add2} is : ' , add1 - add2) 
 
     
+    @staticmethod
     def Multiplication():
         print('opening Airthmetic calculator....')
         add1 = int(input('Enter a number for addition : '))
@@ -83,7 +86,8 @@ class Arthmetic:
         print(f'The Sum of your input {add1} x {add2} is : ' , add1 * add2) 
 
 
-    def Subtraction():
+    @staticmethod
+    def Divide():
         print('opening Airthmetic calculator....')
         add1 = int(input('Enter a number for addition : '))
         add2 = int(input('Enter a number for addition : '))
