@@ -83,10 +83,14 @@ class Arthmetic:
         print('opening Airthmetic calculator....')
         add1 = int(input('Enter a number for addition : '))
         add2 = int(input('Enter a number for addition : '))
-        print(f'The Sum of your input {add1} + {add2} is : ' , add1 * add2) 
+        print(f'The Sum of your input {add1} x {add2} is : ' , add1 * add2) 
 
 
-    
+    def Subtraction():
+        print('opening Airthmetic calculator....')
+        add1 = int(input('Enter a number for addition : '))
+        add2 = int(input('Enter a number for addition : '))
+        print(f'The Sum of your input {add1} / {add2} is : ' , add1 / add2) 
 
 
 
