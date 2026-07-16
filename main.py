@@ -40,27 +40,48 @@ def logic_choice(choice):
         else:
             print(f"\n[{plugin_choice}] is an invalid plugin key! Returning to main.")
 
+
+
     # --- CALCULATOR ---
     elif choice == 'C':
         calc_setting()
-        print("\nStarting Calculator Application...")
+        calc_type = input("\nchoose your calculator type A_C OR S_C ").upper()
 
-        
-        try:
-            session_data = FinancialData()
+        if(calc_type == 'A_C'):
+            print('Opening Airthmetic calculator : ')
+            op_choice = input("Select Operation (A=Add, B=Sub, C=Mul, D=Div): ").upper()
             
-            # Prevent NumPy crash if the user just hits 'enter' and the list is empty
-            if not session_data.clean_data:
-                print("Error: No valid data entered. Please enter numbers separated by commas.")
-                return # Exits this function cleanly without crashing
+
+
+        # try:
+        #     data = Arthmetic()
+        #     if not session_data.clean_data:
+        #         print("Error: No valid data entered. Please enter numbers separated by commas.")
+        #         return # Exits this function cleanly without crashing
                 
-            fintraa_calc = StatisticsCalculator(session_data.clean_data)
-            fintraa_calc.display_all_stats()
+        #     fintraa_calc = Arthmetic(data.clean_data)
+        #     fintraa_calc.display_all_stats()
             
-        except ValueError:
-            print("Error: Invalid input. Please only enter numbers (e.g., 100, 200, 300).")
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
+        # except ValueError:
+        #     print("Error: Invalid input. Please only enter numbers (e.g., 100, 200, 300).")
+        # except Exception as e:
+        #     print(f"An unexpected error occurred: {e}")
+
+        # try:
+        #     session_data = FinancialData()
+            
+        #     # Prevent NumPy crash if the user just hits 'enter' and the list is empty
+        #     if not session_data.clean_data:
+        #         print("Error: No valid data entered. Please enter numbers separated by commas.")
+        #         return # Exits this function cleanly without crashing
+                
+        #     fintraa_calc = StatisticsCalculator(session_data.clean_data)
+        #     fintraa_calc.display_all_stats()
+            
+        # except ValueError:
+        #     print("Error: Invalid input. Please only enter numbers (e.g., 100, 200, 300).")
+        # except Exception as e:
+        #     print(f"An unexpected error occurred: {e}")
 
     # --- SETTINGS DISPLAY ONLY ---
     elif choice == 'S':
