@@ -65,6 +65,14 @@ MO -> Microsoft One 365''')
     print('='*30 + '\n')
 
 
+def calc_setting():
+       print('=======================================')
+       print(''' Calculator Software keys are : 
+S_C -> Statistics Calculator
+A_C -> Airthmetic Calculator''')
+print('=======================================')
+
+
 class googlefuncs:
     # @staticmethod tells Python these functions don't need 'self'
     @staticmethod
