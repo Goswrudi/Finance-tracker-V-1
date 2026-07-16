@@ -1,8 +1,8 @@
 import webbrowser
 from datetime import datetime
 
-from code_class import information, show_settings, googlefuncs, microsoftfuncs
-from calc import FinancialData, StatisticsCalculator
+from code_class import information, show_settings, googlefuncs, microsoftfuncs , calc_setting
+from calc import FinancialData, StatisticsCalculator, Arthmetic
 
 def logic_choice(choice):
     # --- GOOGLE & MICROSOFT PLUGINS ---
@@ -42,7 +42,10 @@ def logic_choice(choice):
 
     # --- CALCULATOR ---
     elif choice == 'C':
+        calc_setting()
         print("\nStarting Calculator Application...")
+
+        
         try:
             session_data = FinancialData()
             
