@@ -55,71 +55,21 @@ def logic_choice(choice):
             elif(op_choice == 'C'): Arthmetic.Multiplication()
             elif(op_choice == 'D'): Arthmetic.Divide()
             else: print('Something went worng , May user enterd something else')
-            
 
 
-        # try:
-        #     data = Arthmetic()
-        #     if not session_data.clean_data:
-        #         print("Error: No valid data entered. Please enter numbers separated by commas.")
-        #         return # Exits this function cleanly without crashing
-                
-        #     fintraa_calc = Arthmetic(data.clean_data)
-        #     fintraa_calc.display_all_stats()
-            
-        # except ValueError:
-        #     print("Error: Invalid input. Please only enter numbers (e.g., 100, 200, 300).")
-        # except Exception as e:
-        #     print(f"An unexpected error occurred: {e}")
+        elif calc_type == 'S_C':
+            try:
+                session_data = FinancialData()
+                if not session_data.clean_data:
+                    print("Error: No valid data entered.")
+                    return
+                fintraa_calc = StatisticsCalculator(session_data.clean_data)
+                fintraa_calc.display_all_stats()
+            except ValueError:
+                print("Error: Invalid input data format.")
+            except Exception as e:
+                print(f"An unexpected error occurred: {e}")
+        else:
+            print("Unknown calculator system type selection.")
 
-        # try:
-        #     session_data = FinancialData()
-            
-        #     # Prevent NumPy crash if the user just hits 'enter' and the list is empty
-        #     if not session_data.clean_data:
-        #         print("Error: No valid data entered. Please enter numbers separated by commas.")
-        #         return # Exits this function cleanly without crashing
-                
-        #     fintraa_calc = StatisticsCalculator(session_data.clean_data)
-        #     fintraa_calc.display_all_stats()
-            
-        # except ValueError:
-        #     print("Error: Invalid input. Please only enter numbers (e.g., 100, 200, 300).")
-        # except Exception as e:
-        #     print(f"An unexpected error occurred: {e}")
-
-    # --- SETTINGS DISPLAY ONLY ---
-    elif choice == 'S':
-        print("\n=== FINTRAA KEY MAP & SETTINGS ===")
-        show_settings()
-        
-    # --- CATCH-ALL FOR BAD MAIN MENU INPUTS ---
-    else:
-        print(f"\nInvalid key [{choice}]! Fintraa automation terminated.")
-
-
-def run_app():
-    print('===============================')
-    print('')
-    
-    # 1. Welcome banner & get username
-    username = information()
-    
-    print('===============================')
-    print('')
-    
-    # 2. Main Menu Choice
-    print('Q for MS/Google plugins')
-    print('C for Calculator') 
-    print('S for Settings')      
-    print('===============================')
-    
-    # Pass the choice into the logic function as an argument
-    main_choice = input('''Today's Agenda? : ''').upper()
-    logic_choice(main_choice)
-
-
-# --- Execution Guard ---
-# This ensures the script only runs when executed directly.
-if __name__ == "__main__":
-    run_app()
+   
