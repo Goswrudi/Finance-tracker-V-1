@@ -72,4 +72,25 @@ def logic_choice(choice):
         else:
             print("Unknown calculator system type selection.")
 
-   
+ # --- SETTINGS MAIN VIEW ---
+    elif choice == 'S':
+        show_settings()
+        
+    else:
+        print(f"\nInvalid key [{choice}]! Fintraa execution aborted.")
+
+
+def run_app():
+    print('===============================')
+    username = information()
+    print('===============================')
+    print('Q for MS/Google plugins')
+    print('C for Calculator') 
+    print('S for Settings')      
+    print('===============================')
+    
+    main_choice = input('''Today's Agenda? : ''').upper()
+    logic_choice(main_choice)
+
+if __name__ == "__main__":
+    run_app()
