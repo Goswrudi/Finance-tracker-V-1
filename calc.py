@@ -64,8 +64,11 @@ class StatisticsCalculator:
 # FUTURE EXPANSION SPACE
 # ==========================================
 class Arthmetic:
-    """ Basic Airhtmetic logic : """ 
-    pass
+    """ A Airhtmetic Calculator for daily and basic performative task  : """ 
+
+
+
+
 
 class TaxCalculator:
     """Placeholder: You can build your GST/Income Tax logic here later!"""
