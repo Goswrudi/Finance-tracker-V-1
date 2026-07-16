@@ -50,6 +50,11 @@ def logic_choice(choice):
         if(calc_type == 'A_C'):
             print('Opening Airthmetic calculator : ')
             op_choice = input("Select Operation (A=Add, B=Sub, C=Mul, D=Div): ").upper()
+            if(op_choice == 'A'): Arthmetic.Addition()
+            elif(op_choice == 'B'): Arthmetic.Subtraction()
+            elif(op_choice == 'C'): Arthmetic.Multiplication()
+            elif(op_choice == 'D'): Arthmetic.Divide()
+            else: print('Something went worng , May user enterd something else')
             
 
 
