@@ -1,7 +1,7 @@
 import webbrowser
 from datetime import datetime
 
-from code_class import information, show_settings, googlefuncs, microsoftfuncs , calc_setting
+from code_class import information, show_settings, googlefuncs, microsoftfuncs , calc_setting , daily_reports
 from calc import FinancialData, StatisticsCalculator, Arthmetic
 from reports import daily
 
@@ -81,6 +81,10 @@ def logic_choice(choice):
     elif choice == 'R':
         print('Opening Report calculator : ')
         rc = input('Select Report operation (D=Daily report , W = Weekly report , M = Monthly report). ').upper()
+        if(rc == 'D'): daily()
+        elif(rc == 'W'): None
+        elif(rc == 'M'): None
+        else: print('Something went Wrong, May operation enterd by the user :( ')
 
     else:
         print(f"\nInvalid key [{choice}]! Fintraa execution aborted.")
@@ -93,7 +97,7 @@ def run_app():
     print('Q for MS/Google plugins')
     print('C for Calculator') 
     print('S for Settings')      
-    print('R for Daily/Weekly reports')
+    print('R for Reports')
     print('===============================')
     
     main_choice = input('''Today's Agenda? : ''').upper()
