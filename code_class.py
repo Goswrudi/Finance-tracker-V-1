@@ -71,3 +71,9 @@ class microsoftfuncs:
     def O_powerpoint(): webbrowser.open('https://powerpoint.cloud.microsoft/en-gb/')
     @staticmethod
     def O_MO(): webbrowser.open('https://www.microsoft.com/en-in/microsoft-365')
+
+def weekly_reports():
+    print('Welcome to Weekly reports !!')
+    print('''F for Food : 
+T for Transport : 
+O for Other : ''')
