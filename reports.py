@@ -1,0 +1,3 @@
+# The purpose of this file is to write code for the user weekly reports on credit and debits 
+# file under the project of fiinntra...
+
