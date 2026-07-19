@@ -72,8 +72,8 @@ class microsoftfuncs:
     @staticmethod
     def O_MO(): webbrowser.open('https://www.microsoft.com/en-in/microsoft-365')
 
-def weekly_reports():
-    print('Welcome to Weekly reports !!')
+def daily_reports():
+    print('Welcome to daily reports !!')
     print('''F for Food : 
 T for Transport : 
 O for Other : ''')
