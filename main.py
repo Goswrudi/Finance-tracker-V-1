@@ -78,8 +78,10 @@ def logic_choice(choice):
         show_settings()
     
 
+    elif choice == 'R':
+        print('Opening Report calculator : ')
+        rc = input('Select Report operation (D=Daily report , W = Weekly report , M = Monthly report). ').upper()
 
-    
     else:
         print(f"\nInvalid key [{choice}]! Fintraa execution aborted.")
 
