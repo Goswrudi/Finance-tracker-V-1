@@ -3,6 +3,7 @@ from datetime import datetime
 
 from code_class import information, show_settings, googlefuncs, microsoftfuncs , calc_setting
 from calc import FinancialData, StatisticsCalculator, Arthmetic
+from reports import daily
 
 def logic_choice(choice):
     # --- GOOGLE & MICROSOFT PLUGINS ---
@@ -75,7 +76,10 @@ def logic_choice(choice):
  # --- SETTINGS MAIN VIEW ---
     elif choice == 'S':
         show_settings()
-        
+    
+
+
+    
     else:
         print(f"\nInvalid key [{choice}]! Fintraa execution aborted.")
 
@@ -87,6 +91,7 @@ def run_app():
     print('Q for MS/Google plugins')
     print('C for Calculator') 
     print('S for Settings')      
+    print('R for Daily/Weekly reports')
     print('===============================')
     
     main_choice = input('''Today's Agenda? : ''').upper()
