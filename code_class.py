@@ -20,7 +20,7 @@ def information():
     name = input(f"{LIGHT_BLUE}➔{RESET} {BOLD}Enter your name:{RESET} ")
     print("\n" + f"{LIGHT_BLUE}━{RESET}" * 60)
     print(f"  {DEEP_BLUE}❖{RESET} {BOLD}Hey {name}, Welcome to Fiinntra !!{RESET}")
-    print(f"    {LIGHT_BLUE}The Job Eater of Accountants and Personal Assistants !!{RESET}")
+    print(f"    {LIGHT_BLUE}Not your avg 'Finance Tracker'💢 !!{RESET}")
     print(f"{LIGHT_BLUE}━{RESET}" * 60 + "\n")
     return name
 
