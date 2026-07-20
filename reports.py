@@ -29,6 +29,3 @@ def daily():
         print(f"Your daily total spent is: {finalamount}")
         print("===============================")
         # total = input('Enter your total amount of money eg:(100,200)')
-
-
-daily()
