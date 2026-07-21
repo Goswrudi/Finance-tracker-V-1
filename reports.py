@@ -29,3 +29,32 @@ def daily():
         print(f"Your daily total spent is: {finalamount}")
         print("===============================")
         # total = input('Enter your total amount of money eg:(100,200)')
+
+
+
+def weekly():
+
+    items_spend = int(input('On how many days did you spend total? (e.g., 2): '))
+
+    finalamount = 0
+
+    # 2. Loop through each item one by one
+    for i in range(items_spend):
+        print(f"\n--- Day #{i+1} ---")
+        
+        # Ask for the day 
+        where_spend = input('On Which Day? eg:([M]onday or [T]uesday) : ')
+        
+        # Ask for the money for the specific day 
+        money_spent = input(f'Enter total money spent on {where_spend}: ')
+
+        totalmoney = int(money_spent)
+
+        finalamount += totalmoney
+
+        print(f'Recorded: You spent {money_spent} on {where_spend}.')
+
+        print("\n===============================")
+        print(f"Your total spent till now is: {finalamount}")
+        print("===============================")
+        # total = input('Enter your total amount of money eg:(100,200)')
