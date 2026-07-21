@@ -1,9 +1,9 @@
 import webbrowser
 from datetime import datetime
 
-from code_class import information, show_settings, googlefuncs, microsoftfuncs , calc_setting , daily_reports
+from code_class import information, show_settings, googlefuncs, microsoftfuncs , calc_setting , daily_reports , weekly_reports
 from calc import FinancialData, StatisticsCalculator, Arthmetic
-from reports import daily
+from reports import daily , weekly
 
 def logic_choice(choice):
     # --- GOOGLE & MICROSOFT PLUGINS ---
