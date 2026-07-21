@@ -44,7 +44,7 @@ def weekly():
         
         # Ask for the day 
         where_spend = input('On Which Day? eg:([M]onday or [T]uesday) : ')
-        
+            
         # Ask for the money for the specific day 
         money_spent = input(f'Enter total money spent on {where_spend}: ')
 
@@ -58,3 +58,23 @@ def weekly():
         print(f"Your total spent till now is: {finalamount}")
         print("===============================")
         # total = input('Enter your total amount of money eg:(100,200)')
+
+
+def weekly2():
+
+    how_spent = input('How much you spent total on this week eg(275) : ')
+    print('=========================================================')
+    print(f'recorded you spend total {how_spent} this week : ')
+    print('=========================================================')
+
+    where_spent = input('On which items you spent the most ? eg([F]ood , [T]ransport? , [O]ther ) : ')
+
+    clean_data = [str(x.strip()) for x in where_spent.split(",") if x.strip() ]
+
+    print('=========================================================')
+    print(f'recorded you spend most on this catogerys {clean_data} this week : ')
+    print('=========================================================')
+
+    print('')
+    print('***********************************************************')
+    print(f'your total expenses on {clean_data} are {how_spent} : ')
