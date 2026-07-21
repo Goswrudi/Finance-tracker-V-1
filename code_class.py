@@ -77,3 +77,16 @@ def daily_reports():
     print('''F for Food : 
 T for Transport : 
 O for Other : ''')
+    
+
+def weekly_reports():
+    print('Welcome to weekly reports !!')
+    print('''M for Monday : 
+T for Tuesday : 
+W for Wedenesday :
+T Fo Thrusday :           
+F for Friday :       
+S for Saturday :  
+S for Sunday :                      ''')
+
+
