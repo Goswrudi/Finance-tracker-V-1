@@ -82,7 +82,7 @@ def logic_choice(choice):
         print('Opening Report calculator : ')
         rc = input('Select Report operation (D=Daily report , W = Weekly report , M = Monthly report). ').upper()
         if(rc == 'D'): daily()
-        elif(rc == 'W'): None
+        elif(rc == 'W'): weekly()
         elif(rc == 'M'): None
         else: print('Something went Wrong, May operation enterd by the user :( ')
 
